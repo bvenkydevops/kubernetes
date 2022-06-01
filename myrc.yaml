@@ -6,13 +6,11 @@ spec:
   replicas: 4
   selector:
       app: myphpimage1june22:1
-
   template:  
     metadata:
       labels:
          app: myphpimage1june22:1
-         
-    spec:  
+  spec:  
       containers:
       - name: myphpimage1june22:1-container
         image: bojjavenkatesh67/myphpimage1june22:1
