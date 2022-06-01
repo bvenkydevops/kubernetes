@@ -3,18 +3,18 @@ kind: ReplicationController
 metadata: 
   name:  myphpimage1june22:1-rc
 spec:
-  replicas: 4
+  replicas: 3
   selector:
       app:  myphpimage1june22:1
-      version: 2.6.1
+
   template:  
     metadata:
       labels:
          app: myphpimage1june22:1
-         version: 2.6.1
+         
     spec:  
       containers:
       - name:  myphpimage1june22:1-container
         image: bojjavenkatesh67/myphpimage1june22:1
         ports:
-         - containerPort: 8080
+         - containerPort: 80
